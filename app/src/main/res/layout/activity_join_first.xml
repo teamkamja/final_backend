@@ -1,0 +1,203 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/join_first_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/primary_background"
+    tools:context=".controller.JoinFirstActivity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/assist_box"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/join_text"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.1"
+            android:text="회원가입"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:fontFamily="@font/bingre_bold"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/join_box"
+            android:layout_width="0dp"
+            app:layout_constraintWidth_percent="0.8"
+            android:layout_height="0dp"
+            app:layout_constraintHeight_percent="0.6"
+            android:paddingVertical="10dp"
+            android:background="@drawable/login_box_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/email_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/pw_box"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/email_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="이메일"
+                    android:textColor="#707070"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/email_input"
+                    app:layout_constraintStart_toStartOf="@id/email_input"
+
+
+                    />
+
+                <EditText
+                    android:id="@+id/email_input"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_height="40dp"
+                    android:hint="abcd@momo.kr"
+
+                    android:textColorHint="#AFAFAF"
+                    android:background="@drawable/join_inputborder_background"
+                    app:layout_constraintTop_toBottomOf="@id/email_text"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    android:textSize="15dp"
+                    android:paddingHorizontal="15dp"
+                    android:inputType="textEmailAddress" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pw_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/email_box"
+            app:layout_constraintBottom_toTopOf="@id/pwCheck_box"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+                <TextView
+                    android:id="@+id/pw_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호"
+                    android:textColor="#707070"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/pw_input"
+                    app:layout_constraintStart_toStartOf="@id/pw_input"
+
+                    />
+
+                <EditText
+                    android:id="@+id/pw_input"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_height="40dp"
+                    android:hint="비밀번호"
+                    android:textColor="@color/black"
+                    android:textColorHint="#AFAFAF"
+                    android:background="@drawable/join_inputborder_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pw_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:textSize="15dp"
+                    android:paddingHorizontal="15dp"
+
+                    />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pwCheck_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/pw_box"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+                <TextView
+                    android:id="@+id/pwCheck_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="비밀번호 재확인"
+                    android:textColor="#707070"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toTopOf="@id/pwCheck_input"
+                    app:layout_constraintStart_toStartOf="@id/pwCheck_input"
+
+                    />
+
+                <EditText
+                    android:id="@+id/pwCheck_input"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_height="46dp"
+                    android:background="@drawable/join_inputborder_background"
+                    android:hint="비밀번호"
+                    android:paddingHorizontal="15dp"
+                    android:textColorHint="#B4B4B4"
+                    android:textSize="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/pwCheck_text"
+                     />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <android.widget.Button
+                    android:id="@+id/next_button"
+                    android:layout_width="0dp"
+                    app:layout_constraintWidth_percent="0.8"
+                    android:layout_height="40dp"
+                    android:background="@drawable/join_next_button_background"
+                    android:text="다음"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginVertical="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/spring"
+            android:scaleType="centerCrop"
+            app:layout_constraintWidth_percent="0.8"
+            app:layout_constraintStart_toStartOf="@id/join_box"
+            app:layout_constraintTop_toTopOf="@id/assist_box"
+            app:layout_constraintBottom_toBottomOf="@id/assist_box" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

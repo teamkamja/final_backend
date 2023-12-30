@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.kamja2.fragment.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/navigation_save"
+        android:name="com.example.kamja2.fragment.SavedFragment"
+        android:label="SavedFragment" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.kamja2.fragment.SearchFragment"
+        android:label="SearchFragment" />
+    <fragment
+        android:id="@+id/navigation_me"
+        android:name="com.example.kamja2.fragment.MeFragment"
+        android:label="MeFragment" />
+    <fragment
+        android:id="@+id/navigation_chatbot"
+        android:name="com.example.kamja2.fragment.ChatbotFragment"
+        android:label="navigation_chatbot" />
+</navigation>

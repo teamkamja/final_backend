@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">kamja2</string>
+    <string name="title_activity_select_map">SelectMap</string>
+</resources>

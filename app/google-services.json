@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "90181206930",
+    "project_id": "c-quickbook",
+    "storage_bucket": "c-quickbook.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:90181206930:android:cd502d4fc97f2c7957f74b",
+        "android_client_info": {
+          "package_name": "com.example.kamja2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8yIQd3ptKI_f-3C8TXr_zZ0Mu_URrzFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

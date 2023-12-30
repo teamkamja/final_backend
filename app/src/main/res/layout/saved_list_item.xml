@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_margin="25dp"
+    android:background="@drawable/saved_list_background"
+    android:padding="8dp">>
+
+    <!-- 저장된 리스트 안에 들어있는 이미지!-->
+    <ImageView
+        android:id="@+id/saved_list_image"
+        android:layout_width="160dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+    <!-- 저장된 리스트 안에 텍스트 제목 -->
+
+    <TextView
+        android:id="@+id/saved_list_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/saved_list_image"
+        android:layout_toRightOf="@+id/saved_list_image"
+        android:textColor="#9EB23B"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <!-- 저장된 리스트 안에 텍스트 내용 설명 -->
+
+    <TextView
+        android:id="@+id/saved_list_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saved_list_title"
+        android:layout_toRightOf="@id/saved_list_image"
+        android:textColor="#9EB23B"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <!-- 저장된 리스트 텍스트 내용 설명 -->
+
+    <TextView
+        android:id="@+id/heart_list_body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saved_list_body"
+        android:layout_toRightOf="@id/saved_list_image"
+        android:textColor="#9EB23B"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
+
+

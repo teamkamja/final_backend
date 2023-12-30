@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="조합정렬">
+        <item>인기순</item>
+        <item>최신순</item>
+        <item>가격낮은순</item>
+        <item>가격높은순</item>
+        <item>AI추천순</item>
+    </string-array>
+</resources>

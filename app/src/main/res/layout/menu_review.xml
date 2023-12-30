@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/review"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="10dp"
+    android:padding="2dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/nickName"
+        android:layout_below="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="친절한 양파씨 | 14시간"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/best"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nickName"
+        android:background="@color/Lightgray"
+        android:text="BEST"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nickName"
+        android:text="양이 많고 서비스가 좋아요"
+        android:textColor="@color/gray"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/commentLike"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/comment"
+        android:src="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/likeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/commentLike"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/commentLike"
+        android:gravity="center_vertical"
+        android:text="좋아요"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

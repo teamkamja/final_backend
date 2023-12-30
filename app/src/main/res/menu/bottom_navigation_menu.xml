@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/search"
+        android:title="검색"
+        />
+    <item
+        android:id="@+id/navigation_chatbot"
+        android:icon="@drawable/chatbot"
+        android:title="챗봇" />
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="홈" />
+    <item
+        android:id="@+id/navigation_save"
+        android:icon="@drawable/scrap"
+        android:title="저장" />
+    <item
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/my"
+        android:title="마이" />
+</menu>
