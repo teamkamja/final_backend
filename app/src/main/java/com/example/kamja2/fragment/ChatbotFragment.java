@@ -114,7 +114,7 @@ public class ChatbotFragment extends Fragment {
             RequestBody body = RequestBody.create(jsonBody.toString(), JSON);
             Request request = new Request.Builder()
                     .url("https://api.openai.com/v1/chat/completions")
-                    .header("Authorization", "Bearer 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")
+                    .header("Authorization", "your_api_key_here")
                     .post(body)
                     .build();
 
